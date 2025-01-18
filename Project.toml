@@ -1,6 +1,6 @@
 name = "ResEE"
 uuid = "539b6a15-2144-4f08-8574-27224deb4b81"
-authors = ["physics "]
+authors = ["Zhiyuan Yao and Yu Li"]
 version = "0.1.0"
 
 [deps]

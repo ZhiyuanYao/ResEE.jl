@@ -10,7 +10,7 @@ The package name `ResEE` stands for [res]tricted/symmetry-[res]olved
 ## Installation
 
 ```julia-repl
-julia> ] add https://github.com/top2group/ResEE.jl.git
+julia> ] add ResEE
 
 julia> using ResEE
 

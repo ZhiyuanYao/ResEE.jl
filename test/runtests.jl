@@ -11,8 +11,8 @@
 #==============================================================================#
 using ResEE, LinearAlgebra
 
-const L  = 32  # system size
-const LA = 16  # size of the subsystem A
+const L  = 26  # system size
+const LA = 13  # size of the subsystem A
 
 # create the state space
 function get_state_space(L::Int)

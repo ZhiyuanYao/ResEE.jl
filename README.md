@@ -23,7 +23,7 @@ PXP model, each site can be in the ground (n=0) state or the excited (n=1) state
 but no neighboring sites can be both in the excited states.
 
 ```julia
-using Random, ResEE
+using Random, ResEE, LinearAlgebra
 
 const L  = 32  # system size
 const LA = 16  # size of the subsystem A
@@ -64,7 +64,7 @@ To illustrate the usage of the U(1) symmetry method, we consider the spin-S chai
 with total magnetization conservation.
 
 ```julia
-using Random, ResEE
+using Random, ResEE, LinearAlgebra
 
 const S  = 1   # spin
 const L  = 12  # system size

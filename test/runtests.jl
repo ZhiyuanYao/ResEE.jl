@@ -2,7 +2,7 @@
 # Description
 # -----------
 #   This program calculate the bipartite entanglement entropy spectrum of the 
-#   PPXPP model with periodic boundary conditions. 
+#   PXP model with periodic boundary conditions. 
 #
 #   Version:  1.0
 #   Created:  2024-12-24 11:45

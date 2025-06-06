@@ -10,7 +10,7 @@
 # Institute:  Lanzhou Center for Theoretical Physics, Lanzhou University
 #==============================================================================#
 using Random, LinearAlgebra, SparseArrays
-using rEE
+using ResEE
 
 #------------------------------------------------------------------------------
 # system parameters

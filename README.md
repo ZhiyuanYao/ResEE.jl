@@ -1,11 +1,8 @@
 # ResEE
 
-This package provides efficient algorithms for computing the reduced density matrix
-and the von Neumann entanglement entropy of systems with restricted Hilbert spaces
-or a global U(1) symmetry.
+This package provides efficient algorithms for computing the reduced density matrix and the von Neumann entanglement entropy of systems with restricted Hilbert spaces or a global U(1) symmetry.
 
-The package name `ResEE` stands for [res]tricted/symmetry-[res]olved
-[e]ntanglement [e]ntropy.
+The package name `ResEE` stands for [res]tricted/symmetry-[res]olved [e]ntanglement [e]ntropy.
 
 ## Installation
 
@@ -16,11 +13,9 @@ julia> using ResEE
 
 ```
 
-## Restricted Hilbert Space 
-The following code demonstrates how to use the restricted Hilbert space method to
-calculate the entanglement entropy of the kinetically restricted PXP model. In the
-PXP model, each site can be in the ground (n=0) state or the excited (n=1) state,
-but no neighboring sites can be both in the excited states.
+## Examples
+### Restricted Hilbert Space 
+The following code demonstrates how to use the restricted Hilbert space method to calculate the entanglement entropy of the kinetically restricted PXP model. In the PXP model, each site can be in the ground (n=0) state or the excited (n=1) state, but no neighboring sites can be both in the excited states.
 
 ```julia
 using Random, ResEE, LinearAlgebra
@@ -59,9 +54,8 @@ get_rho!(rho, psi, M, ij_istate)
 Sv = get_entEntropy!(rho)
 ```
 
-## U(1) Symmetry
-To illustrate the usage of the U(1) symmetry method, we consider the spin-S chain
-with total magnetization conservation.
+### U(1) Symmetry
+To illustrate the usage of the U(1) symmetry method, we consider the spin-S chain with total magnetization conservation.
 
 ```julia
 using Random, ResEE, LinearAlgebra
@@ -96,6 +90,10 @@ rhos, Ms, ij_igroup_istate = get_rhos_Ms_ijkmap(state_istate, eltype(psi); S=S, 
 # use U(1) blocking method to calculate entanglement entropy Sv
 Sv = get_entEntropy!(psi, rhos, Ms, igroup_ij_istate)
 ```
+
+# Benchmarks
+![](benchmark.png)
+Benchamark result of average time needed to calculate the bipartite von Neumann entanglement entropy of a random wave function (a) in the PXP model and (b) in the $M_{z}=0$ sector of spin-$1/2$ chain using different methods. The subsystem $A$ size is $L/2$ with $L$ the total system size. All computations is done on a Dell Precision 5860 tower workstation with ten Intel Xeon w5-2445 CPUs operating at a base clock frequency of 3.6 GHz and 256 GB of RAM.
 
 ## References
 For a complete description of the package, please refer to the following paper:

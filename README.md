@@ -97,3 +97,5 @@ Benchamark result of average time needed to calculate the bipartite von Neumann 
 
 ## References
 For a complete description of the package, please refer to the following paper:
+
+Y. Li and Z. Yao, An efficient algorithm for computing entanglement entropy in systems with a restricted Hilbert space or U(1) symmetry, Comput. Phys. Commun. 315, 109729 (2025).
